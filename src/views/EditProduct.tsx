@@ -1,6 +1,6 @@
-import { Link, Form, useActionData, ActionFunctionArgs, redirect, useLocation, LoaderFunctionArgs, useLoaderData } from "react-router-dom"
+import { Link, Form, useActionData, ActionFunctionArgs, redirect,LoaderFunctionArgs, useLoaderData } from "react-router-dom"
 import ErrorMessage from "../components/ErrorMessage";
-import { addProduct, getProductById, updateProduct } from "../services/ProductService";
+import { getProductById, updateProduct } from "../services/ProductService";
 import { Product } from "../types";
 
 export async function loader({ params }: LoaderFunctionArgs) {
